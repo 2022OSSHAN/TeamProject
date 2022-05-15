@@ -1,5 +1,5 @@
 #include "basic.h"
-
+#include "menu.h"
 int selectButton()
 {
     int button;
@@ -29,7 +29,7 @@ int createMenu(Menu *m)
         printf("가격은? ");
         scanf("%d", &m->price);
     } while (m->price < 0);
-    printf("판매 부스는? ");
+    printf("판매 부스는 (든든한동, fryfry, 따스한동)? ");
     scanf("%s", m->booth);
 
     return 1;
@@ -40,18 +40,18 @@ void readMenu(Menu m)
     printf("%s %5d원 %s\n", m.food, m.price, m.booth);
 }
 
-void listMenu(Menu *m, int count)
-{
-    printf("\n======== 메뉴판 ========\n");
-    for (int i = 0; i < count; i++)
-    {
-        if (m[i].price == -1)
-            continue;
-        printf("%2d ", i + 1);
-        readMenu(m[i]);
-    }
-    printf("\n");
-}
+// void listMenu(Menu *m, int count)
+// {
+//     printf("\n======== 메뉴판 ========\n");
+//     for (int i = 0; i < count; i++)
+//     {
+//         if (m[i].price == -1)
+//             continue;
+//         printf("%2d ", i + 1);
+//         readMenu(m[i]);
+//     }
+//     printf("\n");
+// }
 
 int selectDataNum(Menu *m, int count)
 {

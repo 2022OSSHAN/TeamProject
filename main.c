@@ -2,6 +2,7 @@
 #include <string.h>
 #include "basic.h"
 #include "option.h"
+#include "menu.h"
 
 int main(void)
 {

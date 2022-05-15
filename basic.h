@@ -20,7 +20,7 @@ typedef struct {
 int selectButton(); // 프로그램 기능(버튼) 선택
 int createMenu(Menu *m); // 메뉴 추가
 void readMenu(Menu m); // 하나의 메뉴를 출력
-void listMenu(Menu *m, int count); // 전체 등록된 메뉴의 리스트 출력
+
 int selectDataNum(Menu *m, int count); // 수정 또는 삭제하고자 하는 메뉴의 번호를 선택
 int updateMenu(Menu *m); // 메뉴 수정
 int deleteMenu(Menu *m); // 메뉴 삭제
